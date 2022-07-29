@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        h3 {
+            color: black;
+        }
+   
+    </style>
+</head>
+<body>
+    <h1>Lương Hoàng Ngu Ngok Nhất Hệ Mặt Trời</h1>
+    <h3 id="demo"></h3>
+    <button id="random">Check</button>
+    <script>
+        document.getElementById('random').onclick = () => {
+            const A = ['Sai Thế Nào Đươt', 'Đúm Dzậy', 'Correct!!!', 'Ỏ Sao Bic Hay Dzọ'];
+            const x = Math.round(Math.random()*3);
+            document.getElementById("demo").innerHTML = A[x];
+        }
+    </script>
+</body>
+</html>
